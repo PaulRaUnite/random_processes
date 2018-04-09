@@ -1,6 +1,6 @@
 import random
 from functools import reduce
-from typing import List, Tuple
+from typing import List
 
 import numpy
 import os

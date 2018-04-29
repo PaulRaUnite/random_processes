@@ -2,6 +2,14 @@
 Токарев Павел, МФ-31
 
 ##Задание
+###Начальные условия
+1. $i = 7\,,$
+2. $j = 7\,,$
+3. $n = 3 + (i+j \mod{a}) = 4\,,$
+4. $\tau = \Large \frac{5}{5+j}\normalsize = \Large\frac{5}{12}\,,$
+5. $\mu = \Large \frac{1}{\tau}\normalsize = \Large\frac{12}{5}\,,$
+6. $\lambda = \Large \frac{i}{4}\normalsize = \Large\frac{7}{4}\,,$
+7. $\rho = \Large\frac{\lambda}{\mu}\normalsize = \Large\frac{35}{48}\,.$
 
 ###СМО с отказом
 ![QS with Refuse](./qs_refuse.svg)
@@ -28,7 +36,7 @@
 ##Результаты
 ###СМО с отказом
 $P_{0} = \Big(1 + \rho + \frac{\rho^2}{2!} + \frac{\rho^{3}}{3!} + \dots + \frac{\rho^{n}}{n!} \Big)^{-1}\,,$
- $P_{k} = \frac{\rho^{k}}{k!} P_{0}\,,$
+ $P_{k} = \Large\frac{\rho^{k}}{k!}\normalsize P_{0}\,,$
 1. $P_{отказ} = P_{n} = {}\,,$
 2. $A = \lambda Q = {}\,,$
 3. $Q = 1 - P_{отказ} = {}\,,$
@@ -42,8 +50,8 @@ $P_{0} = \Big(1 + \rho + \frac{\rho^2}{2!} + \frac{\rho^{3}}{3!} + \dots + \frac
 
 ###СМО с очередями
 $P_0={\left(1+ \rho+ \frac{\rho^2}{2!}+\ldots+\frac{\rho^n}{n!}+ \frac{\rho^{n+1}}{n!\,(n-\rho)}\right)\!}^{-1}\,,$
-1. $P_{оч}=\frac{\rho^{n+1}}{n!\,(n-\rho)}\cdot p_0 = {}\,,$
-2. $L_{оч} = \frac{\rho^{n+1}\cdot p_0}{n\cdot n!}\cdot\left(1-\frac{\rho}{n}\right)^{-2} = {}\,,$
-3. $T_{ож} = \frac{L_{оч}}{\lambda} = {}\,,$
-4. $L_{сист}=L_{оч}+\rho\,,$
-   $T_{сист} = \frac{L_{сист}}{\lambda} = {}.$
+1. $P_{оч}=\Large\frac{\rho^{n+1}}{n!\,(n-\rho)} \normalsize P_0 = {}\,,$
+2. $L_{оч} = \Large\frac{\rho^{n+1}\cdot p_0}{n\cdot n!}\normalsize\left(1-\frac{\rho}{n}\right)^{-2} = {}\,,$
+3. $T_{ож} = \Large\frac{L_{оч}}{\lambda} \normalsize = {}\,,$
+4. $L_{сист}= L_{оч}+\rho\,,$
+   $T_{сист} =\Large \frac{L_{сист}}{\lambda} \normalsize = {}.$

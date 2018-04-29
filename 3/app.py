@@ -85,7 +85,7 @@ def to_float_map(t: tuple) -> tuple:
     return e
 
 
-#print(float(lam / nu))
+print(lam / nu)
 #print(to_float_map(with_refusal(lam / nu, n)))
 #print(to_float_map(with_refusal_simultation(lam, nu, n)))
 #print(to_float_map(with_queue(lam / nu, n)))

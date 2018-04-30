@@ -86,7 +86,7 @@ def to_float_map(t: tuple) -> tuple:
 
 
 print(lam / nu)
-#print(to_float_map(with_refusal(lam / nu, n)))
+print(to_float_map(with_refusal(lam / nu, 3)))
 #print(to_float_map(with_refusal_simultation(lam, nu, n)))
 #print(to_float_map(with_queue(lam / nu, n)))
 
@@ -95,7 +95,7 @@ try:
 finally:
     with open("./report.md", "r") as income, open("./report_print.md", "w") as outcome:
         text = income.read().split("{}")
-        args: tuple = to_float_map(with_refusal(lam / nu, n)) + to_float_map(with_refusal_simultation(lam, nu, n)) + to_float_map(with_queue(lam / nu, n))
+        args: tuple = to_float_map(with_refusal(lam / nu, n)) +(3.0,)+ to_float_map(with_refusal_simultation(lam, nu, n)) + to_float_map(with_queue(lam / nu, n))
         for i in range(len(text)):
             outcome.write(text[i])
             try:

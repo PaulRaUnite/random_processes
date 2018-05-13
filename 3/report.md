@@ -5,7 +5,7 @@
 ###Начальные условия
 1. $i = 7\,,$
 2. $j = 7\,,$
-3. $n = 3 + (i+j \mod{a}) = 4\,,$
+3. $n = 3 + (i+j \mod{8}) = 4\,,$
 4. $\tau = \Large \frac{5}{5+j}\normalsize = \Large\frac{5}{12}\,,$
 5. $\mu = \Large \frac{1}{\tau}\normalsize = \Large\frac{12}{5}\,,$
 6. $\lambda = \Large \frac{i}{4}\normalsize = \Large\frac{7}{4}\,,$
@@ -45,6 +45,8 @@ $P_{0} = \Big(1 + \rho + \frac{\rho^2}{2!} + \frac{\rho^{3}}{3!} + \dots + \frac
 5. $n_{min} = {}.$
 
 Симуляция
+0. $T_{симулиции} = год = 365*24 часов$
+    Под $\lambda$ и $\mu$ подразумевается количество сообщений в час.
 1. $P_{отказ} = {}\,,$
 2. $A = {}\,,$
 3. $Q = {}\,,$
